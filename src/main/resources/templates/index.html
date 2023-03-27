@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:src="@{js/ezuikit.js}"></script>
+</head>
+<body>
+<div id="video-container"></div>
+<script th:inline="javascript">
+    var player = new EZUIKit.EZUIKitPlayer({
+        id: 'video-container', // 视频容器ID
+        accessToken: 'at1.cyybjfo2avh8b3375sf8si6l85kknhwq-8hfujvpmgh-0omq1q3-ltsmjxf5w',
+        url: 'ezopen://open.ys7.com/J89409104/1.live',
+    })
+</script>
+</body>
+</html>
